@@ -1,0 +1,27 @@
+/* G01 Overrides */
+
+.sidebar-nav>ul>li>a.active { 
+ background:#FCFCFC !important;
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s !important;
+    animation-duration: 0.3s !important;
+    -webkit-animation-fill-mode: both;
+}
+
+.sidebar-footer a {
+    width: 50% !important;
+}
+
+
+.login-box-left {
+	left: 0 !important;
+	right: 100% !important;
+	min-width:400px;
+	width:20% !important;
+}
+
+.todo-list li {
+	padding: 0 !important;
+}
