@@ -17,11 +17,22 @@
 
 .login-box-left {
 	left: 0 !important;
-	right: 100% !important;
-	min-width:400px;
-	width:20% !important;
+right: 0 !important;
+min-width: 350px;
+width: 60% !important;
+position: absolute;
+height: max-content !important;
+top: 5%;
 }
 
 .todo-list li {
 	padding: 0 !important;
+}
+
+body, aside {
+	font-size:1.1em;
+}
+
+.left-aside ul {
+	font-size:1em !important;
 }
