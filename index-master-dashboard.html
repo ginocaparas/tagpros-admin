@@ -10,12 +10,11 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
-    <title>Admin Press Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+    <title>Tagpros LMS Draft v1a</title>
     <!-- Bootstrap Core CSS -->
     <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Footable CSS -->
-    <link href="./assets/plugins/footable/css/footable.core.css" rel="stylesheet">
-    <link href="./assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <!-- Morries chart CSS -->
+    <link href="./assets/plugins/morrisjs/morris.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/g01.css" rel="stylesheet">
@@ -252,7 +251,7 @@
                                     </li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#"><i class="ti-email"></i> My Notifications</a></li>
-                                    <li><a href="#"><i class="ti-settings"></i> Account Settings</a></li>
+                                    <li><a href="profile.html#settings"><i class="ti-settings"></i> Account Settings</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
@@ -275,7 +274,7 @@
                 <div class="user-profile" style="background: url() no-repeat;">
                     <!-- User profile image -->
                     <div class="profile-img"> <img src="./assets/images/users/1.jpg" alt="user" /> </div>
-                    <!-- User profile text-->
+                    <!-- User profile text--> 
                     <div class="profile-text"> <a href="profile.html" class="link u-dropdown"role="button" >Gino Caparas</a>
                         
 
@@ -293,7 +292,7 @@
                         <li>
                             <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-black-tie"></i><span class="hide-menu">My Application</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="application.html">Apply as a Teacher</a></li>
+                                <li><a href="application.html">Apply as a Pioneer</a></li>
                                 <li><a href="application-status.html">Application Status</a></li>
                             </ul>
                         </li>
@@ -333,17 +332,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">My Students</h3>
+                    <h3 class="text-themecolor">Welcome, Gino!</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Teacher Tools</li>
-                        <li class="breadcrumb-item active">My Students</li>
+                        <li class="breadcrumb-item active">My Dashboard</li>
                     </ol>
-                </div>
-                <div class="">
-                    <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
                 </div>
             </div>
             <!-- ============================================================== -->
@@ -353,83 +348,179 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
+                
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-12">
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
                         <div class="card">
-                            <!-- .left-right-aside-column-->
-                            <div class="contact-page-aside">
-                                <!-- .left-aside-column-->
-                                <div class="left-aside bg-light-part">
-                                    <ul class="list-style-none">
-                                        <li class="box-label"><a href="javascript:void(0)">All Students <span>123</span></a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Grade School <span>103</span></a></li>
-                                        <li><a href="javascript:void(0)">Junior High <span>19</span></a></li>
-                                        <li><a href="javascript:void(0)">Senior High <span>623</span></a></li>
-                                        <li><a href="javascript:void(0)">All High School <span>53</span></a></li>
-                                        <li class="divider"></li>
-                                        <li class="box-label m-t-20"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="btn btn-info text-white">+ Add New Student</a></li>
-                                        <div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title" id="myModalLabel">Add Lable</h4>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <from class="form-horizontal">
-                                                            <div class="form-group">
-                                                                <label class="col-md-12">Name of Label</label>
-                                                                <div class="col-md-12">
-                                                                    <input type="text" class="form-control" placeholder="type name"> </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="col-md-12">Select Number of people</label>
-                                                                <div class="col-md-12">
-                                                                    <select class="form-control">
-                                                                        <option>All Students</option>
-                                                                        <option>10</option>
-                                                                        <option>20</option>
-                                                                        <option>30</option>
-                                                                        <option>40</option>
-                                                                        <option>Custome</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </from>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Save</button>
-                                                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancel</button>
-                                                    </div>
-                                                </div>
-                                                <!-- /.modal-content -->
-                                            </div>
-                                            <!-- /.modal-dialog -->
-                                        </div>
-                                    </ul>
+                            <div class="card-body">
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-8"><h2>2376 <i class="ti-angle-down font-14 text-danger"></i></h2>
+                                        <h6>My Classes This Month</h6></div>
+                                    <div class="col-4 align-self-center text-right  p-l-0">
+                                        <div id="sparklinedash3"></div>
+                                    </div>
                                 </div>
-                                <!-- /.left-aside-column-->
-                                <div class="right-aside ">
-                                    <div class="right-page-header">
-                                        <div class="d-flex">
-                                            <div class="align-self-center">
-                                                <h4 class="card-title m-t-10">Student List </h4></div>
-                                            <div class="ml-auto">
-                                                <i class="mdi mdi-magnify font-14"></i><input type="text" id="demo-input-search2" placeholder="Search Students" class="form-control" style="width: 90%;" > </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-8"><h2 class="">3670 <i class="ti-angle-up font-14 text-success"></i></h2>
+                                        <h6>My Students This Month</h6></div>
+                                    <div class="col-4 align-self-center text-right p-l-0">
+                                        <div id="sparklinedash"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-8"><h2>$1562 <i class="ti-angle-up font-14 text-success"></i></h2>
+                                        <h6>My Earnings This Month</h6></div>
+                                    <div class="col-4 align-self-center text-right p-l-0">
+                                        <div id="sparklinedash2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-8"><h2>4.9 <i class="fa fa-star mr-1"></i><i class="ti-angle-down font-14 text-danger"></i></h2>
+                                        <h6>Overall Rating</h6></div>
+                                    <div class="col-4 align-self-center text-right p-l-0">
+                                        <div id="sparklinedash4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="card" style="display: none;">
+                            <div class="card-body">
+  
+                                <div id="morris-area-chart2" style="height: 0;"></div>
+
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                                    <div class="card-header">
+                                        <div class="card-actions">
+                                            <a class="" data-action="collapse"><i class="ti-minus"></i></a>
+                                            <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
+                                            <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
+                                        </div>
+                                        <h4 class="card-title m-b-0">My Classes</h4>
+                                    </div>
+                                    <div class="card-body collapse show">
+                                        <div class="table-responsive">
+                                            <table class="table product-overview">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Class Title</th>
+                                                        <th>Photo</th>
+                                                        <th>Starts at</th>
+                                                        <th>Ends at</th>
+                                                        <th>Status</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Science Class</td>
+                                                        <td>
+                                                            <img src="./assets/images/classes/sem01.png" alt="iMac" width="80">
+                                                        </td>
+                                                        <td>10-7-2021</td>
+                                                        <td>11-7-2021</td>
+                                                        <td>
+                                                            <span class="label label-success font-weight-100">Done</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="" data-toggle="tooltip" data-original-title="View"><i class="ti-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Math Class</td>
+                                                        <td>
+                                                            <img src="./assets/images/classes/sem02.png" alt="iPhone" width="80">
+                                                        </td>
+                                                        <td>08-7-2021</td>
+                                                        <td>09-7-2021</td>
+                                                        <td>
+                                                            <span class="label label-warning font-weight-100">Pending</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="" data-toggle="tooltip" data-original-title="View"><i class="ti-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Design Masterclass</td>
+                                                        <td>
+                                                            <img src="./assets/images/classes/sem03.png" alt="apple_watch" width="80">
+                                                        </td>
+                                                        <td>10-7-2021</td>
+                                                        <td>11-7-2021</td>
+                                                        <td>
+                                                            <span class="label label-success font-weight-100">Done</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="" data-toggle="tooltip" data-original-title="View"><i class="ti-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Finance 101</td>
+                                                        <td>
+                                                            <img src="./assets/images/classes/sem04.png" alt="mac_mouse" width="80">
+                                                        </td>
+                                                        <td>11-7-2021</td>
+                                                        <td>12-7-2021</td>
+                                                        <td>
+                                                            <span class="label label-danger font-weight-100">Cancelled</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="" data-toggle="tooltip" data-original-title="View"><i class="ti-trash"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="btn btn-info text-white">+ Create a New Class</a>
                                         </div>
                                     </div>
+                                </div>
+                        <div class="card card-default">
+                                    <div class="card-header">
+                                        <div class="card-actions">
+                                            <a class="" data-action="collapse"><i class="ti-minus"></i></a>
+                                            <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
+                                            <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
+                                        </div>
+                                        <h4 class="card-title m-b-0">My Students</h4>
+                                    </div>
+                                    <div class="card-body collapse show">
+                                        <div>
+
                                     <div class="table-responsive">
                                         <table id="demo-foo-addrow" class="table m-t-30 table-hover no-wrap contact-list" data-page-size="10">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Email</th>
-                                                    <th>Phone</th>
+                                                    <th>Student Name</th>
+                                                    <th>Contact Email</th>
+                                                    <th>Contact Phone</th>
                                                     <th>Grade Level</th>
                                                     <th>Age</th>
                                                     
@@ -462,6 +553,7 @@
                                                     <td>+234 456 789</td>
                                                     <td><span class="label label-info">Grade School</span> </td>
                                                     <td>11</td>
+                                                   
                                                     
                                                     <td>
                                                         <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
@@ -521,134 +613,20 @@
                                                     <td>+678 456 789</td>
                                                     <td><span class="label label-warning">Grade School</span></td>
                                                     <td>6</td>
-                                                    
-                                                    
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/7.jpg" alt="user" class="img-circle" /> Seth McFarlane</a>
-                                                    </td>
-                                                    <td>3@gmail.com</td>
-                                                    <td>+123 456 789</td>
-                                                    <td><span class="label label-danger">Junior High</span></td>
-                                                    <td>15</td>
                                                    
-                                                   
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/8.jpg" alt="user" class="img-circle" /> Salman Rushdie</a>
-                                                    </td>
-                                                    <td>6@gmail.com</td>
-                                                    <td>+234 456 789</td>
-                                                    <td><span class="label label-info">Senior High</span></td>
-                                                    <td>17</td>
-                                                  
                                                     
                                                     <td>
                                                         <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/1.jpg" alt="user" class="img-circle" /> Happy Peanuts</a>
-                                                    </td>
-                                                    <td>emaiul@gmail.com</td>
-                                                    <td>+345 456 789</td>
-                                                    <td><span class="label label-success">Grade School</span></td>
-                                                    <td>18</td>
-                                                    
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/2.jpg" alt="user" class="img-circle" /> Pia Ttos</a>
-                                                    </td>
-                                                    <td>test@gmail.com</td>
-                                                    <td>+456 456 789</td>
-                                                    <td><span class="label label-inverse">Senior High</span></td>
-                                                    <td>16</td>
-                                                  
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/3.jpg" alt="user" class="img-circle" /> Firstlast Name</a>
-                                                    </td>
-                                                    <td>gmail@gmail.com</td>
-                                                    <td>+567 456 789</td>
-                                                    <td><span class="label label-danger">Senior High</span></td>
-                                                    <td>43</td>
-                                                   
-                                                   
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>12</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/4.jpg" alt="user" class="img-circle" /> Mam Sir</a>
-                                                    </td>
-                                                    <td>genelia@gmail.com</td>
-                                                    <td>+123 456 789</td>
-                                                    <td><span class="label label-danger">Grade School</span> </td>
-                                                    <td>23</td>
-                                                   
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>13</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/5.jpg" alt="user" class="img-circle" /> Jolly Bee</a>
-                                                    </td>
-                                                    <td>10@gmail.com</td>
-                                                    <td>+234 456 789</td>
-                                                    <td><span class="label label-info">Senior High</span> </td>
-                                                    <td>26</td>
-                                                 
-                                                    
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>14</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="./assets/images/users/6.jpg" alt="user" class="img-circle" /> Dragon Katol</a>
-                                                    </td>
-                                                    <td>edna@gmail.com</td>
-                                                    <td>+345 456 789</td>
-                                                    <td><span class="label label-success">Senior High</span></td>
-                                                    <td>28</td>
                                                 
-                                                    
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="View"><i class="fa fa-eye fa-2x text-muted"></i></button>
-                                                    </td>
-                                                </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
                                                     <td colspan="2">
-                                                        
+                                                         <div class="text-left">
+                                                            <a href="students.html" data-toggle="modal" data-target="#myModal" class="btn btn-info text-white">View All Students</a>
+                                                        </div>
                                                     </td>
                                                     <div id="add-contact" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
@@ -689,6 +667,7 @@
                                                         <!-- /.modal-dialog -->
                                                     </div>
                                                     <td colspan="7">
+
                                                         <div class="text-right">
                                                             <ul class="pagination"> </ul>
                                                         </div>
@@ -699,71 +678,172 @@
                                     </div>
                                     <!-- .left-aside-column-->
                                 </div>
-                                <!-- /.left-right-aside-column-->
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <!-- Column -->
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <div class="card-actions">
+                                    <a class="" data-action="collapse"><i class="ti-minus"></i></a>
+                                    <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
+                                    <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
+                                </div>
+                                <h4 class="card-title m-b-0">Complete Your Profile</h4>
+                            </div>
+                            <div class="card-body collapse show">
+                                
+                                        
+                                        <!-- ============================================================== -->
+                                        <!-- To do list widgets -->
+                                        <!-- ============================================================== -->
+                                        <div class="to-do-widget">
+                                            <!-- .modal for add task -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Add Task</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <label>Task name</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Task Name"> </div>
+                                                                <div class="form-group">
+                                                                    <label>Assign to</label>
+                                                                    <select class="custom-select form-control pull-right">
+                                                                        <option selected="">Sachin</option>
+                                                                        <option value="1">Sehwag</option>
+                                                                        <option value="2">Pritam</option>
+                                                                        <option value="3">Alia</option>
+                                                                        <option value="4">Varun</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                            <ul class="list-task todo-list list-group m-b-0" data-role="tasklist">
+                                                <li class="list-group-item" data-role="task">
+                                                    <div class="checkbox checkbox-info">
+                                                        <input type="checkbox" id="inputSchedule" name="inputCheckboxesSchedule">
+                                                        <label for="inputSchedule" class="task-done"> <span>Watch Tagpros 101</span> </label>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item" data-role="task">
+                                                    <div class="checkbox checkbox-info">
+                                                        <input type="checkbox" id="inputCall" name="inputCheckboxesCall">
+                                                        <label for="inputCall" class=""> <span>Complete Personal Details</span> <span class="label label-danger">Today</span> </label>
+                                                    </div>
+
+                                                </li>
+                                                <li class="list-group-item" data-role="task">
+                                                    <div class="checkbox checkbox-info">
+                                                        <input type="checkbox" id="inputBook" name="inputCheckboxesBook">
+                                                        <label for="inputBook" class=""> <span>Input Class Descriptions</span> </label>
+                                                    </div>
+
+                                                </li>
+                                                <li class="list-group-item" data-role="task">
+                                                    <div class="checkbox checkbox-info">
+                                                        <input type="checkbox" id="inputForward" name="inputCheckboxesForward">
+                                                        <label for="inputForward" class=""> <span>Upload Sample Classes</span> <span class="label label-warning">2 weeks</span> </label>
+                                                    </div>
+
+                                                </li>
+                                                <li class="list-group-item" data-role="task">
+                                                    <div class="checkbox checkbox-info">
+                                                        <input type="checkbox" id="inputRecieve" name="inputCheckboxesRecieve">
+                                                        <label for="inputRecieve" class=""> <span>Complete My Profile</span> </label>
+                                                    </div>
+
+                                                </li>
+                                                <li class="list-group-item" data-role="task">
+                                                    <div class="checkbox checkbox-info">
+                                                        <input type="checkbox" id="inputForward2" name="inputCheckboxesd">
+                                                        <label for="inputForward2" class=""> <span>Maintain Rating of 4.5 & Above</span> <span class="label label-success">Success!</span> </label>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        
+                                </div>
+
                             </div>
                         </div>
+                        <!-- Column -->
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <div class="card-actions">
+                                    <a class="" data-action="collapse"><i class="ti-minus"></i></a>
+                                    <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
+                                    <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
+                                </div>
+                                <h4 class="card-title m-b-0">TAGPROS Announcements</h4>
+                            </div>
+                            <div class="card-body collapse show bg-info">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item flex-column">
+                                            <i class="fa fa-shopping-cart fa-2x text-white"></i>
+                                            <p class="text-white">25th Jan</p>
+                                            <h3 class="text-white font-light">Now Get <span class="font-bold">50% Off</span><br>
+                                      on buy</h3>
+                                            <div class="text-white m-t-20">
+                                                <i>- Ecommerce site</i>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item flex-column">
+                                            <i class="fa fa-shopping-cart fa-2x text-white"></i>
+                                            <p class="text-white">25th Jan</p>
+                                            <h3 class="text-white font-light">Now Get <span class="font-bold">50% Off</span><br>
+                                      on buy</h3>
+                                            <div class="text-white m-t-20">
+                                                <i>- Ecommerce site</i>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item flex-column active">
+                                            <i class="fa fa-shopping-cart fa-2x text-white"></i>
+                                            <p class="text-white">25th Jan</p>
+                                            <h3 class="text-white font-light">Now Get <span class="font-bold">50% Off</span><br>
+                                      on buy</h3>
+                                            <div class="text-white m-t-20">
+                                                <i>- Ecommerce site</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        
                     </div>
                 </div>
+                <!-- Row -->
+                
+                
+                <!-- Row -->
+                
+                <!-- Row -->
+                <!-- Row -->
+                
+                <!-- Row -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <div class="right-sidebar">
-                    <div class="slimscrollright">
-                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
-                        <div class="r-panel-body">
-                            <ul id="themecolors" class="m-t-20">
-                                <li><b>With Light sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
-                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
-                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
-                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
-                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
-                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
-                                <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
-                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
-                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
-                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
-                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
-                                <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a></li>
-                            </ul>
-                            <ul class="m-t-20 chatonline">
-                                <li><b>Chat option</b></li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="./assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+                
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -788,10 +868,11 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
@@ -799,19 +880,20 @@
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
     <!--stickey kit -->
-    <script src="./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <script src="./assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- Footable -->
-    <script src="./assets/plugins/footable/js/footable.all.min.js"></script>
-    <script src="./assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="assets/plugins/raphael/raphael-min.js"></script>
+    <script src="assets/plugins/morrisjs/morris.min.js"></script>
+    <!-- sparkline chart -->
+    <script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/dashboard4.js"></script>
     <!--FooTable init-->
     <script src="js/footable-init.js"></script>
-    <!-- ============================================================== -->
-    <!-- Style switcher -->
-    <!-- ============================================================== -->
-    <script src="./assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 
 </html>

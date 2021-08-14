@@ -21,6 +21,7 @@ right: 0 !important;
 min-width: 350px;
 width: 60% !important;
 position: absolute;
+min-height: 70vh !important	;
 height: max-content !important;
 top: 5%;
 }
@@ -35,4 +36,10 @@ body, aside {
 
 .left-aside ul {
 	font-size:1em !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+color:white !important;
+background-color: #83C447;
+border-color: #83C447 !important;
 }
