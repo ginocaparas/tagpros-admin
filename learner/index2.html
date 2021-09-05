@@ -13,7 +13,7 @@
     <title>Tagpros Learners Admin Draft v1a</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="../assets/plugins/dropify/dist/css/dropify.min.css">
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/g01.css" rel="stylesheet">
@@ -30,6 +30,138 @@
 
 
 <body class="fix-header fix-sidebar card-no-border">
+<!-- .modal for my learner -->
+<div class="modal fade" id="myLearnerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Learner</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="card card-outline-info">
+
+                        <div class="card-body">
+                            <form action="#" class="form-horizontal">
+                                <div class="form-body">
+                                    <h3 class="box-title">My Learner Info</h3>
+                                    <hr class="m-t-0 m-b-40">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="control-label text-right col-md-3">First Name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control" placeholder="John">
+                                                    <small class="form-control-feedback">You may also input their nickname here.</small> </div>
+                                            </div>
+                                        </div>
+                                    <!--/span-->
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="control-label text-right col-md-3">Last Name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control" placeholder="Doe">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    <!--/span-->
+                                    </div>
+                                    <!--/row-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="control-label text-right col-md-3">Gender</label>
+                                                <div class="col-md-9">
+                                                    <select class="form-control custom-select">
+                                                        <option value="">Male</option>
+                                                        <option value="">Female</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="control-label text-right col-md-3">Date of Birth</label>
+                                                <div class="col-md-9">
+                                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                    </div>
+                                    <!--/row-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="control-label text-right col-md-3">Grade Level</label>
+                                                <div class="col-md-9">
+                                                    <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+                                                        <option value="Category 1">Kinder to Grade 6</option>
+                                                        <option value="Category 2">Grade 7 to 10 / Junior High</option>
+                                                        <option value="Category 3">Grade 11-12 / Senior High</option>
+                                                        <option value="Category 4">College</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <div class="col-md-6">
+                                            
+                                        </div>
+                                        </div>
+                                        <!--/span-->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="control-label text-right col-md-3">Upload Picture</label>
+                                                <div class="col-md-9">
+                                                    <div class="dropify-wrapper">
+                                                        <div class="dropify-message">
+                                                            <span class="file-icon"></span> 
+                                                            <p class="text-center">Drag and drop a file here or click</p>
+                                                            <p class="dropify-error">Ooops, something wrong appended.</p>
+                                                        </div>
+                                                        <div class="dropify-loader"></div>
+                                                        <!--<div class="dropify-errors-container">
+                                                            <ul></ul>
+                                                        </div>
+                                                        <input type="file" id="input-file-now" class="dropify">
+                                                        <button type="button" class="dropify-clear">Remove</button>
+                                                        <div class="dropify-preview">
+                                                            <span class="dropify-render"></span>
+                                                            <div class="dropify-infos">
+                                                                <div class="dropify-infos-inner">
+                                                                    <p class="dropify-filename">
+                                                                        <span class="file-icon"></span> 
+                                                                        <span class="dropify-filename-inner"></span>
+                                                                    </p>
+                                                                    <p class="dropify-infos-message">Drag and drop or click to replace</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 
 <!-- .modal for new teachers -->
 <div class="modal fade" id="newTeacherModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -44,13 +176,11 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="h-25 w-25 mx-auto">
-                            <video class="tagpros-vid fullscreen-bg__video" loop="" muted="" autoplay="" poster="./img/cover.jpg" width="100%">
-                                <source src="https://thumbs.gfycat.com/SmoothCoolBlackbear-mobile.mp4" type="video/mp4">
-                            </video>
+                            <img src="../assets/images/tarsier-v2a.png">
                         </div>
                         <div class="card-body text-center">
-                            <h1>Welcome to the Tagpros Learners Dashboard!</h1>
-                            <p class="text-center">I'm Justinne the Tarsier, and I'm here to guide you through our system.</p>
+                            <h1>Welcome to the Learners Dashboard!</h1>
+                            <p class="text-center">I'm Tag the Tarsier, and I'm here to guide you through our system.</p>
                             <a class="btn btn-megna mx-auto" href="#carouselExampleCaptions" role="button" data-slide="next">
                             Next: Watch a video about Tagpros &gt;
                             </a>
@@ -64,16 +194,52 @@
                             <h3>Learn more about us by watching this short video!</h3>
                             <p><b>Tagpros</b> is a nonprofit and a community built on diversity, equity, and inclusion, where educators, parents, and schools come together on a mission to discuss children's learning in the new normal.</p>
                             <a class="btn btn-megna mx-auto" href="#carouselExampleCaptions" role="button" data-slide="next">
-                                Next: How do I use the Tagpros LMS? &gt;
+                                Next: Add some learners! &gt;
                             </a>
                         
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="w-100 mx-auto text-center">
+                            <img src="../assets/images/tarsier-tut01.png">
+                        </div>
+                        <div class="card-body text-center">
+                            <h1>First order of business: Add your Learners!</h1>
+                            <p class="text-center">Adding learners allows you to register them to the awesome classes we have on Tagpros. Learners can be your kids, or anyone you're taking care of. They will become the students for our online classes!</p>
+                            <a class="btn btn-megna mx-auto" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            Next: Book some classes &gt;
+                            </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="w-100 mx-auto text-center">
+                            <img src="../assets/images/tarsier-tut02.png">
+                        </div>
+                        <div class="card-body text-center">
+                            <h1>Let's look for some cool classes!</h1>
+                            <p class="text-center">Tagpros has thousands of classes to choose from. Found something that you like? Just add that class to your cart and select which learner will attend it. Once payment has been finalized, you may now attend that class when it begins! Schedules and online links will be sent via email and in-app notifications.</p>
+                            <a class="btn btn-megna mx-auto" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            Next: Confirm your schedule &gt;
+                            </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="w-100 mx-auto text-center">
+                            <img src="../assets/images/tarsier-tut03.png">
+                        </div>
+                        <div class="card-body text-center">
+                            <h1>Check and confirm your schedule!</h1>
+                            <p class="text-center">It's very important to let our teachers know if you can attend a class or not. To make this easier, the Tagpros LMS has a Calendar function to allow you to confirm your class just by clicking the <b>Check</b> or <b>Confirm</b> button! Class cancellations will also be allowed up to 24 hours prior to the scheduled class, and is subject to refunds or rescheduling.</p>
+                            <a class="btn btn-megna mx-auto" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            Next: You're ready to go! &gt;
+                            </a>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-md-4 text-center">
-                                <img src="../assets/images/tarsier-circle2.png">
+                                <img src="../assets/images/tarsier-v2b.png">
                             </div>
                             <div class="col-xs-12 col-md-8">
                                 <h2>The New Tagpros LMS is filled with awesome features!</h2>
@@ -113,6 +279,9 @@
                           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
                     </ol>
 
                   </div>
@@ -424,7 +593,7 @@
                             <a href="#" aria-expanded="false"><img src="../assets/images/users/6.jpg" alt="user" class="profile-pic mr-2"> <span class="hide-menu">Andrea</span></a>
                         </li>  
                         <li>
-                            <a href="#" aria-expanded="false"><i class="fa fa-plus"></i> <span class="hide-menu">Add New Learner</span></a>
+                            <a href="#" aria-expanded="false" data-toggle="modal" data-target="#myLearnerModal"><i class="fa fa-plus"></i> <span class="hide-menu">Add New Learner</span></a>
                         </li>  
 
                     </ul>
@@ -477,8 +646,8 @@
                 <!-- Row -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="alert alert-danger">
-                            <img src="../assets/images/tarsier-circle.png" class="float-left mr-4" style="width:100px;">
+                        <div class="alert alert-danger p-3">
+                            <img src="../assets/images/tarsier-v2c.png" class="float-left mr-4" style="width:100px;">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
                             <h3 class="text-danger"><i class="fa fa-smile-o"></i> Hello! Have you completed your profile yet?</h3> Just checking to see if you've completed your Learners profile yet! Simply click on your profile picture on the sidebar to the left, or <a href="#">CLICK HERE</a> to start editing! Completed profiles get to unlock all the features of the Tagpros LMS!
                         </div>
@@ -709,7 +878,7 @@
                                                     <a class="nav-link" data-toggle="tab" href="#messages4" role="tab"><img src="../assets/images/users/6.jpg" alt="user" class="profile-pic mr-2"> <span class="hidden-xs-down">Andrea</span></a> 
                                                 </li>
                                                 <li class="nav-item"> 
-                                                    <a class="nav-link" data-toggle="tab" href="#" role="tab"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
+                                                    <a class="nav-link" href="#" role="tab" data-toggle="modal" data-target="#myLearnerModal"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
                                                 </li>
                                             </ul>
                                             <!-- Tab panes -->
@@ -1127,7 +1296,7 @@
                                                     <a class="nav-link" data-toggle="tab" href="#navtabs-3" role="tab"><img src="../assets/images/users/6.jpg" alt="user" class="profile-pic mr-2"> <span class="hidden-xs-down">Andrea</span></a> 
                                                 </li>
                                                 <li class="nav-item"> 
-                                                    <a class="nav-link" data-toggle="tab" href="#" role="tab"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
+                                                    <a class="nav-link" href="#" role="tab" data-toggle="modal" data-target="#myLearnerModal"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
                                                 </li>
                                         </ul>
                                         <div class="tab-content br-n pn">
@@ -1546,7 +1715,7 @@
 
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" data-toggle="tab" href="#" role="tab"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
+                                                    <a class="nav-link" href="#" role="tab" data-toggle="modal" data-target="#myLearnerModal"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
                                                 </li>
 
                                         </ul>
@@ -1937,6 +2106,48 @@
                                     </div>        
                         </div>
 
+                        <!-- UI 4 -->
+                        <!-- UI 4 -->
+                        <!-- UI 4 -->
+                        <div class="card card-default learner-ui">
+                                    <div class="card-header">
+                                        <div class="card-actions">
+                                            <a class="" data-action="collapse"><i class="ti-plus"></i></a>
+                                            <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
+                                            <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
+                                        </div>
+                                        <h4 class="card-title m-b-0">My Learners' Schedules UI 4 - No Learners</h4>
+                                    </div>
+                                    <div class="card-body collapse py-2">
+
+                                        <ul class="nav nav-tabs customtab2 mb-4">
+                                                <li class="nav-item"> 
+                                                    <a class="nav-link" href="#" role="tab" data-toggle="modal" data-target="#myLearnerModal"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></a> 
+                                                </li>
+                                        </ul>
+                                        <div class="tab-content br-n pn">
+                                            <div id="navtabs-1" class="tab-pane active">
+                                                <div class="row">
+                                                        <div class="col-12">
+                                                            <h4><b>No Learners Added Yet!</b></h4>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="px-3 mt-4 row">
+                                                        <div class="col-3 float-left">
+                                                            <img src="../assets/images/tarsier-v2a.png" style="width: 180px;height: 180px;">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <h3>Uh oh! Looks like you haven't added any learners yet.</h3>
+                                                            <p>Click on the <b style="color:#00897b;"><i class="fa fa-plus"></i> <span class="hidden-xs-down">Add Learner</span></b> button above to add a Learner!</p>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                    </div>        
+                        </div>
+
                     </div>
                     <div class="col-lg-4 col-md-5">
                         <!-- Column -->
@@ -1963,47 +2174,13 @@
                                         <!-- To do list widgets -->
                                         <!-- ============================================================== -->
                                         <div class="to-do-widget">
-                                            <!-- .modal for add task -->
-                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h4 class="modal-title">Add Task</h4>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <form>
-                                                                <div class="form-group">
-
-                                                                    <label>Task name</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter Task Name"> </div>
-                                                                <div class="form-group">
-                                                                    <label>Assign to</label>
-                                                                    <select class="custom-select form-control pull-right">
-                                                                        <option selected="">Sachin</option>
-                                                                        <option value="1">Sehwag</option>
-                                                                        <option value="2">Pritam</option>
-                                                                        <option value="3">Alia</option>
-                                                                        <option value="4">Varun</option>
-                                                                    </select>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.modal-content -->
-                                                </div>
-                                                <!-- /.modal-dialog -->
-                                            </div>
+                                            
                                             <!-- /.modal -->
                                             <ul class="list-task todo-list list-group m-b-0" data-role="tasklist">
                                                 <li class="list-group-item" data-role="task">
                                                     <div class="checkbox checkbox-info">
                                                         <input type="checkbox" id="inputSchedule" name="inputCheckboxesSchedule">
-                                                        <label for="inputSchedule" class="task-done"> <span>Watch Tagpros 101</span> </label>
+                                                        <label for="inputSchedule" class=""> <span>Watch Tagpros 101</span> </label>
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item" data-role="task">
@@ -2016,14 +2193,14 @@
                                                 <li class="list-group-item" data-role="task">
                                                     <div class="checkbox checkbox-info">
                                                         <input type="checkbox" id="inputBook" name="inputCheckboxesBook">
-                                                        <label for="inputBook" class=""> <span>Input Class Descriptions</span> </label>
+                                                        <label for="inputBook" class=""> <span>Add 1 More Learner</span> </label>
                                                     </div>
 
                                                 </li>
                                                 
                                             </ul>
-                                        
-                                </div>
+                                        </div>
+                                
 
                             </div>
                         </div>
@@ -2056,7 +2233,7 @@
                                         <div class="mt-0 text-center">Senior High</div>
                                     </div>
                                     <div class="col-12 mt-4">
-                                        <button type="button" class="btn btn-outline-megna w-100" data-dismiss="modal"><i class="fa fa-plus"></i> Add Learner</button>
+                                        <button type="button" class="btn btn-outline-megna w-100" data-toggle="modal" data-target="#myLearnerModal" ><i class="fa fa-plus"></i> Add Learner</button>
                                     </div>
                                 </div>  
                             </div>
@@ -2184,7 +2361,50 @@
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
-    
+    <!-- jQuery file upload -->
+    <script src="../assets/plugins/dropify/dist/js/dropify.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Basic
+        $('.dropify').dropify();
+
+        // Translated
+        $('.dropify-fr').dropify({
+            messages: {
+                default: 'Glissez-déposez un fichier ici ou cliquez',
+                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                remove: 'Supprimer',
+                error: 'Désolé, le fichier trop volumineux'
+            }
+        });
+
+        // Used events
+        var drEvent = $('#input-file-events').dropify();
+
+        drEvent.on('dropify.beforeClear', function(event, element) {
+            return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+        });
+
+        drEvent.on('dropify.afterClear', function(event, element) {
+            alert('File deleted');
+        });
+
+        drEvent.on('dropify.errors', function(event, element) {
+            console.log('Has Errors');
+        });
+
+        var drDestroy = $('#input-file-to-destroy').dropify();
+        drDestroy = drDestroy.data('dropify')
+        $('#toggleDropify').on('click', function(e) {
+            e.preventDefault();
+            if (drDestroy.isDropified()) {
+                drDestroy.destroy();
+            } else {
+                drDestroy.init();
+            }
+        })
+    });
+    </script>
     <script type="text/javascript">
     $(window).on('load', function() {
         $('#newTeacherModal').modal('show');
