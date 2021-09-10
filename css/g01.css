@@ -1,5 +1,9 @@
 /* G01 Overrides */
 
+.login-register {
+  overflow: auto;
+}
+
 .sidebar-nav>ul>li>a.active { 
  background:#FCFCFC !important;
 }
@@ -20,7 +24,7 @@
 right: 0 !important;
 min-width: 350px;
 width: 60% !important;
-position: absolute;
+position: relative !important;
 min-height: 70vh !important	;
 height: max-content !important;
 top: 5%;
@@ -53,8 +57,15 @@ border-color: #83C447 !important;
 	border:0;
 }
 
-.carousel-indicators .active {
+.family .carousel-indicators .active {
     background: #00897b;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+.solo-learner .carousel-indicators .active {
+    background: #5c4ac7;
     border-radius: 100%;
     width: 10px;
     height: 10px;
@@ -298,20 +309,36 @@ font-size: 0.9rem;
 	position: relative;
 	width: 22.2%;
 }
-.customtab2 li a.nav-link {
+
+.family .customtab2 li a.nav-link {
  border:0px;
  margin-right:3px;
  color:#00897b;
 }
-.customtab2 li a.nav-link.active {
+.family .customtab2 li a.nav-link.active {
  background:#00897b;
  color:#ffffff;
+ border-radius: .25rem;
 }
-.customtab2 li a.nav-link:hover {
+.family .customtab2 li a.nav-link:hover {
  color:#ffffff;
  background:#00897b;
 }
 
+.solo-learner .customtab2 li a.nav-link {
+ border:0px;
+ margin-right:3px;
+ color:#5c4ac7;
+}
+.solo-learner .customtab2 li a.nav-link.active {
+ background:#5c4ac7;
+ color:#ffffff;
+ border-radius: .25rem;
+}
+.solo-learner .customtab2 li a.nav-link:hover {
+ color:#ffffff;
+ background:#5c4ac7;
+}
 
 
 
@@ -539,4 +566,15 @@ font-size: 0.9rem;
 
 .week .highlight {
 	background: none;
+}
+
+.text-megna {
+  color: #00897b !important;
+}
+
+
+.login-register .btn-secondary:hover {
+    color: #fff;
+    background-color: #fff59d;
+    border-color: #ccc;
 }
